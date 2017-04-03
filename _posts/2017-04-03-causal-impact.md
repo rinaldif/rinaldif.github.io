@@ -70,7 +70,13 @@ retrieve all the relevant stock prices, `ggplot2` to create some of the
 charts and of course `CausalImpact` to perform the analysis. Let's start
 by installing and loading all the necessary libraries:
 
-`{r message = FALSE, results='asis'} options(warn = -1) #install.packages("tseries") library(tseries) #install.packages("ggplot2") library(ggplot2) #devtools::install_github("google/CausalImpact") library(CausalImpact)`
+    options(warn = -1)
+    #install.packages("tseries")
+    library(tseries)
+    #install.packages("ggplot2")
+    library(ggplot2)
+    #devtools::install_github("google/CausalImpact")
+    library(CausalImpact)
 
 We first extract the Adjusted Close price for all required stocks and I
 specifically chose the `zoo` format as it is the recommended object type
@@ -80,16 +86,26 @@ the VW series in the second part of the analysis. The Emissions Scandal
 broke on Friday the 18th of September 2015, so I'm going to collect
 weekly data from the beginning of 2011 up to current date.
 
-`{r, results='asis'} start = '2011-01-03'   end = '2017-03-20' quote = 'AdjClose' VolksWagen <- get.hist.quote(instrument = "VOW.DE", start, end, quote, compression = "w") BMW <- get.hist.quote(instrument = "BMW.DE", start, end, quote, compression = "w") Allianz <- get.hist.quote(instrument = "ALV.DE", start, end, quote, compression = "w") series <- cbind(VolksWagen, BMW, Allianz)`
+    start = '2011-01-03'
+      end = '2017-03-20'
+    quote = 'AdjClose'
+    VolksWagen <- get.hist.quote(instrument = "VOW.DE", start, end, quote, compression = "w")
+    BMW <- get.hist.quote(instrument = "BMW.DE", start, end, quote, compression = "w")
+    Allianz <- get.hist.quote(instrument = "ALV.DE", start, end, quote, compression = "w")
+    series <- cbind(VolksWagen, BMW, Allianz)
 
 We then plot the three time series.
 
-`{r, results='asis'} colnames(series) <- c("VolksWagen", "BMW", "Allianz") autoplot(series, facet = NULL) + xlab("") + ylab("Adjusted Close Price")`
+    colnames(series) <- c("VolksWagen", "BMW", "Allianz")
+    autoplot(series, facet = NULL) + xlab("") + ylab("Adjusted Close Price")
+
+![](CausalImpact_vw_md_files/figure-markdown_strict/unnamed-chunk-3-1.png)
 
 We need to define the pre- and post-intervention periods (the emission
 scandal started on the 18th of September 2015)
 
-`{r, results='asis'} pre.period <- as.Date(c(start, "2015-09-14")) post.period <- as.Date(c("2015-09-21", end))`
+    pre.period <- as.Date(c(start, "2015-09-14"))
+    post.period <- as.Date(c("2015-09-21", end))
 
 ### A Simple Model
 
@@ -100,7 +116,31 @@ as the `data` input and specify the seasonality frequency in the
 `model.args` parameter. This is equivalent as specifying a local level
 model with a seasonality component:
 
-`{r, results='asis'} impact_vw <- CausalImpact(series[, 1], pre.period, post.period, model.args = list(niter = 1000, nseasons = 52)) plot(impact_vw) summary(impact_vw)`
+    impact_vw <- CausalImpact(series[, 1], pre.period, post.period, model.args = list(niter = 1000, nseasons = 52))
+    plot(impact_vw)
+
+![](CausalImpact_vw_md_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+
+    summary(impact_vw)
+
+Posterior inference {CausalImpact}
+
+                         Average      Cumulative    
+
+Actual 130 10250  
+Prediction (s.d.) 168 (24) 13283 (1900)  
+95% CI \[123, 217\] \[9715, 17136\]
+
+Absolute effect (s.d.) -38 (24) -3032 (1900)  
+95% CI \[-87, 6.8\] \[-6885, 535.2\]
+
+Relative effect (s.d.) -23% (14%) -23% (14%)  
+95% CI \[-52%, 4%\] \[-52%, 4%\]
+
+Posterior tail-area probability p: 0.04928 Posterior prob. of a causal
+effect: 95.072%
+
+For more details, type: summary(impact, "report")
 
 A quick look at the output should convince you that this method is
 probably not the best, at least for this data, as the confidence
@@ -115,7 +155,31 @@ series (you may argue that those series - especially BMW - may have been
 influenced by the scandal as well and that may be true, but certainly at
 a lower magnitude):
 
-`{r, results='asis'} impact_vw_reg <- CausalImpact(series, pre.period, post.period, model.args = list(niter = 1000, nseasons = 52)) plot(impact_vw_reg) summary(impact_vw_reg)`
+    impact_vw_reg <- CausalImpact(series, pre.period, post.period, model.args = list(niter = 1000, nseasons = 52))
+    plot(impact_vw_reg)
+
+![](CausalImpact_vw_md_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+
+    summary(impact_vw_reg)
+
+Posterior inference {CausalImpact}
+
+                         Average        Cumulative    
+
+Actual 130 10250  
+Prediction (s.d.) 176 (5.8) 13872 (460.8) 95% CI \[163, 187\] \[12899,
+14756\]
+
+Absolute effect (s.d.) -46 (5.8) -3622 (460.8) 95% CI \[-57, -34\]
+\[-4506, -2649\]
+
+Relative effect (s.d.) -26% (3.3%) -26% (3.3%)  
+95% CI \[-32%, -19%\] \[-32%, -19%\]
+
+Posterior tail-area probability p: 0.001 Posterior prob. of a causal
+effect: 99.8997%
+
+For more details, type: summary(impact, "report")
 
 The output of this second analysis looks much better: the confidence
 intervals of the estimate are fairly stable over time. Since we're
