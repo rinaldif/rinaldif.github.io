@@ -122,26 +122,26 @@ model with a seasonality component:
 ![](/images/2017-04-03-causal-impact/unnamed-chunk-5-1.png)
 
     summary(impact_vw)
-    
 
-Posterior inference {CausalImpact}
+    ## Posterior inference {CausalImpact}
+    ## 
+    ##                          Average      Cumulative    
+    ## Actual                   130          10252         
+    ## Prediction (s.d.)        168 (24)     13285 (1901)  
+    ## 95% CI                   [123, 217]   [9722, 17124] 
+    ##                                                     
+    ## Absolute effect (s.d.)   -38 (24)     -3033 (1901)  
+    ## 95% CI                   [-87, 6.7]   [-6873, 529.7]
+    ##                                                     
+    ## Relative effect (s.d.)   -23% (14%)   -23% (14%)    
+    ## 95% CI                   [-52%, 4%]   [-52%, 4%]    
+    ## 
+    ## Posterior tail-area probability p:   0.04928
+    ## Posterior prob. of a causal effect:  95.072%
+    ## 
+    ## For more details, type: summary(impact, "report")
 
-                         Average      Cumulative    
 
-Actual 130 10250  
-Prediction (s.d.) 168 (24) 13283 (1900)  
-95% CI \[123, 217\] \[9715, 17136\]
-
-Absolute effect (s.d.) -38 (24) -3032 (1900)  
-95% CI \[-87, 6.8\] \[-6885, 535.2\]
-
-Relative effect (s.d.) -23% (14%) -23% (14%)  
-95% CI \[-52%, 4%\] \[-52%, 4%\]
-
-Posterior tail-area probability p: 0.04928 Posterior prob. of a causal
-effect: 95.072%
-
-For more details, type: summary(impact, "report")
 
 A quick look at the output should convince you that this method is
 probably not the best, at least for this data, as the confidence
@@ -163,24 +163,24 @@ a lower magnitude):
 
     summary(impact_vw_reg)
 
-Posterior inference {CausalImpact}
+    ## Posterior inference {CausalImpact}
+    ## 
+    ##                          Average        Cumulative    
+    ## Actual                   130            10252         
+    ## Prediction (s.d.)        176 (5.9)      13874 (463.3) 
+    ## 95% CI                   [163, 187]     [12905, 14765]
+    ##                                                       
+    ## Absolute effect (s.d.)   -46 (5.9)      -3622 (463.3) 
+    ## 95% CI                   [-57, -34]     [-4514, -2653]
+    ##                                                       
+    ## Relative effect (s.d.)   -26% (3.3%)    -26% (3.3%)   
+    ## 95% CI                   [-33%, -19%]   [-33%, -19%]  
+    ## 
+    ## Posterior tail-area probability p:   0.001
+    ## Posterior prob. of a causal effect:  99.8997%
+    ## 
+    ## For more details, type: summary(impact, "report")
 
-                         Average        Cumulative    
-
-Actual 130 10250  
-Prediction (s.d.) 176 (5.8) 13872 (460.8) 95% CI \[163, 187\] \[12899,
-14756\]
-
-Absolute effect (s.d.) -46 (5.8) -3622 (460.8) 95% CI \[-57, -34\]
-\[-4506, -2649\]
-
-Relative effect (s.d.) -26% (3.3%) -26% (3.3%)  
-95% CI \[-32%, -19%\] \[-32%, -19%\]
-
-Posterior tail-area probability p: 0.001 Posterior prob. of a causal
-effect: 99.8997%
-
-For more details, type: summary(impact, "report")
 
 The output of this second analysis looks much better: the confidence
 intervals of the estimate are fairly stable over time. Since we're
@@ -196,4 +196,4 @@ Another hint in favor of the latter model is given by the Standard
 Deviation of the estimates, which was 24 in the first model and is now
 down to 5.9.
 
-</br>
+
