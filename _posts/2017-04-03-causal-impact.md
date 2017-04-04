@@ -99,7 +99,7 @@ We then plot the three time series.
     colnames(series) <- c("VolksWagen", "BMW", "Allianz")
     autoplot(series, facet = NULL) + xlab("") + ylab("Adjusted Close Price")
 
-![](CausalImpact_vw_md_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+![](images/2017-04-03-causal-impact/unnamed-chunk-3-1.png)
 
 We need to define the pre- and post-intervention periods (the emission
 scandal started on the 18th of September 2015)
@@ -119,7 +119,7 @@ model with a seasonality component:
     impact_vw <- CausalImpact(series[, 1], pre.period, post.period, model.args = list(niter = 1000, nseasons = 52))
     plot(impact_vw)
 
-![](CausalImpact_vw_md_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+![](images/2017-04-03-causal-impact/unnamed-chunk-5-1.png)
 
     summary(impact_vw)
 
@@ -158,7 +158,7 @@ a lower magnitude):
     impact_vw_reg <- CausalImpact(series, pre.period, post.period, model.args = list(niter = 1000, nseasons = 52))
     plot(impact_vw_reg)
 
-![](CausalImpact_vw_md_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+![](images/2017-04-03-causal-impact/unnamed-chunk-6-1.png)
 
     summary(impact_vw_reg)
 
