@@ -32,12 +32,11 @@ the top-right corner). You then store all the codes you want to download
 in a vector. I usually include a 'names vector' as well so that the
 series names are easy to read.
 
-In this example I'll download the time series of th GDP of three
-countries:
+In this example I'll download the GDP of three countries:
 
--   Germany GDP: UNAE/GDPCD\_DEU
--   China GDP: UNAE/GDPCD\_CHN
--   India GDP: UNAE/GDPCD\_IND
+-   Germany: UNAE/GDPCD\_DEU
+-   China: UNAE/GDPCD\_CHN
+-   India: UNAE/GDPCD\_IND
 
 <!-- -->
 
@@ -47,13 +46,14 @@ countries:
 We can now make the actual API call, which you can do with the `Quandl`
 function. The main parameters are:
 
--   `codes`: a vector containing the Quandl codes of the series to be
+-   `code`: a vector containing the Quandl codes of the series to be
     retrieved
 -   `type`: the object type to be returned (eg: time series, zoo, data
     frame, etc)
 -   `start_date` and `end_date`
--   `collapse`: to define the frequency of data (eg: monthyl, quarterly,
+-   `collapse`: to define the frequency of data (eg: monthly, quarterly,
     annual, etc)
+-   see the [documentation page](https://www.quandl.com/tools/r) for more
 
 <!-- -->
 
