@@ -18,8 +18,8 @@ Start by downloading and installing the package from CRAN:
 
     #install.packages("Quandl")
     library(Quandl)
-    #install.packages("plotly")
-    library(plotly)
+    #install.packages("ggplot2")
+    library(ggplot2)
     Quandl.api_key("your_api_key")
 
 How to use it
