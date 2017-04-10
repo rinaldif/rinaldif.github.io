@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-layout: /_layouts/default
+layout: /_layouts/single
 title: Hello World!
 tags: [about]
 comments: false
