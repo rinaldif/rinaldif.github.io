@@ -1,13 +1,13 @@
 # main links
 main:
     - title: Hello World!
-      url: /about/
+      url: /_pages/about.md
 
     - title: Posts
-      url: /posts/
+      url: /_pages/posts.md
 
     - title: Reading List
-      url: /books/
+      url: /_pages/books.md
 
 
   # - title: "About"
