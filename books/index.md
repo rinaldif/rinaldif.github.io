@@ -4,14 +4,6 @@ layout: page
 title: Reading List
 tags: [books]
 comments: false
-defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
 ---
 
 > “*So many books, so little time.*”

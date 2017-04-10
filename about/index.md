@@ -4,14 +4,6 @@ layout: page
 title: Hello World!
 tags: [about]
 comments: false
-defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
 ---
 
 Statistician & Data lover. Enthusiast about innovation and new technologies. All for self improvement (thank you Coursera!). If you can, automate it! Lazy enough to learn programming. Arduino rookie. Avid reader.
