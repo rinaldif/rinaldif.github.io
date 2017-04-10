@@ -4,7 +4,7 @@ main:
       url: /about/
 
     - title: Test About
-      url: /docs/_pages/about
+      url: /testabout/
 
     - title: Reading List
       url: /books/
