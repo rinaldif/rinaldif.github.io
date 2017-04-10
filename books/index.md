@@ -1,6 +1,6 @@
 ---
 permalink: /books/
-layout: page
+layout: /_layouts/page
 title: Reading List
 tags: [books]
 comments: false
