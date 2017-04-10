@@ -3,8 +3,8 @@ main:
     - title: Hello World!
       url: /about/
 
-#    - title: Posts
-#      url: /posts/
+    - title: Test About
+      url: /docs/_pages/about
 
     - title: Reading List
       url: /books/
