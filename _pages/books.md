@@ -1,4 +1,5 @@
 ---
+permalink: /books/
 layout: page
 title: Reading List
 tags: [books]
