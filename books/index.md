@@ -1,6 +1,6 @@
 ---
 permalink: /books/
-layout: archive
+layout: single
 title: Reading List
 tags: [books]
 comments: false
