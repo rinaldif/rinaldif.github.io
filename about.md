@@ -1,6 +1,5 @@
 ---
 permalink: /about/
-layout: /_layouts/archive
 title: Hello World!
 tags: [about]
 comments: false
