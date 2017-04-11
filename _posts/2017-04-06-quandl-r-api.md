@@ -76,4 +76,4 @@ GDP values from the zoo object.
       xlab("") + 
       facet_grid(Series ~ ., scales = "free_y")
 
-![](/images/2017-04-06-quandl-r-api/unnamed-chunk-4-1.png)
+![](/assets/images/2017-04-06-quandl-r-api/unnamed-chunk-4-1.png)
