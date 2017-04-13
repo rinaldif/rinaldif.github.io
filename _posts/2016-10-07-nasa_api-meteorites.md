@@ -1,6 +1,3 @@
----
- title: NASA's API and Meteorite Landings
----
 
 Using NASA's API to Visualise Meteorite Landings on Google Maps
 ===
@@ -277,3 +274,4 @@ if __name__ == "__main__":
 ```
     
 ![](/assets/images/2016-10-07-nasa_api-meteorites/gmap_plot_meteorites.png)
+

@@ -1,6 +1,3 @@
----
- title: Facebook Network Analysis
----
 
 Hermit, Traveler or Gossiper? Which Facebook personality are you?
 ----------------------
