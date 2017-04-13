@@ -1,9 +1,9 @@
 ---
- permalink: /books/
- layout: single
- title: Reading List
- tags: [books]
- comments: false
+permalink: /books/
+layout: single
+title: Reading List
+tags: [books]
+comments: false
 ---
 
 > “*So many books, so little time.*”
