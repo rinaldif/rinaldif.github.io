@@ -1,9 +1,9 @@
 ---
-permalink: /about/
-layout: single
-title: Hello World!
-tags: [about]
-comments: false
+ permalink: /about/
+ layout: single
+ title: Hello World!
+ tags: [about]
+ comments: false
 ---
 
 Statistician & Data lover. Enthusiast about innovation and new technologies. All for self improvement (thank you Coursera!). If you can, automate it! Lazy enough to learn programming. Arduino rookie. Avid reader.
