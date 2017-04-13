@@ -29,7 +29,7 @@ By analysing these networks we were able to classify three common Facebook perso
 
 **The Hermit**: has a small group of friends that are closely connected.
 
-![](/assets/images/2014-04-07-facebook-graph/chris_facebook.png){:class="img-responsive"}
+![](/assets/images/2014-04-07-facebook-graph/chris_facebook.png)
 
 **The Traveler**: has a large network with clearly defined groups of friends, high connections within groups but a low number of connections between groups.
 
