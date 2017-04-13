@@ -273,5 +273,5 @@ if __name__ == "__main__":
     view(filename)
 ```
     
-![](/assets/images/2016-10-07-nasa_api-meteorites/gmap_plot_meteorites.png)
+![](/assets/images/2016-10-07-nasa-api-meteorites/gmap_plot_meteorites.png)
 
