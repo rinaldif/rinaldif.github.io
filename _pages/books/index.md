@@ -6,7 +6,7 @@ comments: false
 ---
 
 > “*So many books, so little time.*” 
->  - Frank Zappa 
+> Frank Zappa 
 
 I love books. Any type of book really, from deep russian novels to mind bending science fiction, from physics and anthropology to artificial intelligence.
 
