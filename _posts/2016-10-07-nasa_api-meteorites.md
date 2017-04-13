@@ -277,3 +277,5 @@ if __name__ == "__main__":
 ```
     
 ![](/assets/images/2016-10-07-nasa_api-meteorites/gmap_plot_meteorites.png)
+
+{% include gmap_plot_meteorites_html.html %}
