@@ -1,5 +1,5 @@
 Hermit, Traveler or Gossiper? Which Facebook personality are you?
-------------------------------------------------------------------
+----------------------
 
 *I wrote this article (in conjunction with Daniel Dewar) when I was working at Datalicious and it first appeared on their Blog in 2014.*
 
