@@ -1,5 +1,4 @@
 ---
-permalink: /books/
 layout: single
 title: Reading List
 tags: [books]

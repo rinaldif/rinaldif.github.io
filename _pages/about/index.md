@@ -1,5 +1,4 @@
 ---
-permalink: /about/
 layout: single
 title: Hello World!
 tags: [about]
