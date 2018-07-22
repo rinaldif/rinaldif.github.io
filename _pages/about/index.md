@@ -10,7 +10,9 @@ Statistician & Data lover. Enthusiast about innovation and new technologies. All
 In a nutshell
 ============
 
-In 2013 I received my Master's degree in Statistics from the [University of Milan, Bicocca](http://www.unimib.it/go/102/Home/English). In July 2013 I moved to Sydney, Australia, with my partner where I had the opportunity to work in several exciting companies such as [Datalicious](https://www.datalicious.com/), [Data2Decisions](http://data2decisions.com/), [Wetpac Group](https://www.westpac.com.au/) and lately [Cadreon](http://cadreon.com.au/) across a variety of industries. In December 2017, after 5 amazing years in Sydney, we decided it was time to move back to Europe and to break up the long return trip, we made a three months long detour in Southeast Asia, backpacking through amazing places across Thailand, Cambodia, Vietnam, Laos, Singapore and Indonesia. 
+In 2013 I received my Master's degree in Statistics from the [University of Milan, Bicocca](http://www.unimib.it/go/102/Home/English). In July 2013 I moved to Sydney, Australia, with my partner where I had the opportunity to work in several exciting companies such as [Datalicious](https://www.datalicious.com/), [Data2Decisions](http://data2decisions.com/), [Wetpac Group](https://www.westpac.com.au/) and lately [Cadreon](http://cadreon.com.au/) across a variety of industries. 
+
+In December 2017, after 5 amazing years in Sydney, we decided it was time to move back to Europe and to break up the long return trip, we made a three months long detour in Southeast Asia, backpacking through amazing places across Thailand, Cambodia, Vietnam, Laos, Singapore and Indonesia. 
 
 In April 2018 I settled back to Milan and in May I started a new exciting job as Data Scientist at [Musement](https://www.musement.com/), an online ticketing company with a global reach headquartered in Milan. 
 
@@ -23,7 +25,7 @@ Things that excite me
 * The [Art](https://www.edwardtufte.com/tufte/posters) of Data Visualization
 * Snowboarding
 * Thai Food
-* A good book!
+* A [good book](https://rinaldif.github.io/_pages/books/)!
 
 About This Site
 =========
