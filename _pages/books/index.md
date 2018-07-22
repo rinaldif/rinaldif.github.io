@@ -13,6 +13,20 @@ I love books. Any type of book really, from deep russian novels to mind bending 
 
 This is a place where I list the best books that I come across.
 
+* *Twice Born* by Margaret Mazzantini
+* *On The Happy Life* by Lucio Anneo Seneca
+* *Meditations* by Marcus Aurelius
+* *The Manual* by Epictetus
+* *The Elements of Statistical Learning* by Trevor Hastie
+* *The 48 Laws of Power* by Robert Greene
+* *No Beast So Fierce* by Edward Bunker
+* *Born To Run* by Christopher McDougall
+* *First They Killed My Father* by Loung Ung
+* *The Blind Watchmaker* by Richard Dawkins
+* *Le Rose del Vento* by Widad Tamimi
+* *The World Until Yesterday* by Jared Diamond
+* *The Master Algorithm* by Pedro Domingos
+* *The Seven Pillars of Statistical Wisdom* by Stephen M. Stigler
 * *Trust Me, I'm Lying* by Ryan Holiday
 * *Superintelligence* by Nick Bostrom
 * *Black Code* by Ronald J. Deibert
