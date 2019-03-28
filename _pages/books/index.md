@@ -13,6 +13,7 @@ I love books. Any type of book really, from deep russian novels to mind bending 
 
 This is a place where I list the best books that I come across.
 
+* *To Have or to Be?* by Erich Fromm
 * *Twice Born* by Margaret Mazzantini
 * *On The Happy Life* by Lucio Anneo Seneca
 * *Meditations* by Marcus Aurelius
