@@ -215,7 +215,7 @@ map_options = GMapOptions(lat=0, lng=0, map_type="roadmap", zoom=2)
 # Google Maps now requires an API key. You can find out how to get one on the link above.
 # Replace the string below with you own API Key:
 #API_KEY = "your_own_API_Key"
-API_KEY = "AIzaSyCkm8j48kQX1ny7omYNN9W-pf4lEzpoBWI"
+API_KEY = "your_api_key"
 
 #Initializing the GMapPlot object:
 plot = GMapPlot(
