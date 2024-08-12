@@ -16,7 +16,7 @@ In December 2017, after 5 amazing years in Sydney, I figured it was time to move
 
 In April 2018 I settled back in Milan and in May I started a new exciting job as Data Scientist at [Musement](https://www.musement.com/), an online ticketing company with a global reach, headquartered in Milan. 
 
-In early 2022 I then joined Boolean as the Head of Data Teaching, where (aside from working on internal data science projects) I created a brand new course in Data Analytics, managing and mentoring 600+ students in data analytics across more than 25 B2B and B2C courses and coordinating a team of over 30 professionals between data analysts, scientists and engineers. 
+In early 2022 I joined Boolean as the Head of Data Teaching, where (aside from working on internal data science projects) I created a brand new course in Data Analytics, managing and mentoring 600+ students in data analytics across more than 25 B2B and B2C courses and coordinating a team of over 30 professionals between data analysts, scientists and engineers. 
 
 My domains of expertise are Econometrics Modelling, Digital Attribution Machine Learning and Data Visualisation. Big data environments such as Google BigQuery and Amazon Redshift are an essential part of my ETL workflow. My favorite modelling tools are `R` and `Python`; graphic libraries such as `ggplot2` and `seaborn` are great for lightweight data visualization, whereas for more complex dashboards I usually rely on `Shiny Apps` or data visualization software such as `Tableau` (especially when large volumes of data are involved).
 
